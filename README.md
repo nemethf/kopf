@@ -126,8 +126,8 @@ into a docker image with CI/CD tool of your preference.
 
 ```dockerfile
 FROM python:3.7
-ADD . /src
 RUN pip install kopf
+ADD . /src
 CMD kopf run /src/handlers.py --verbose
 ```
 
